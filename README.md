@@ -8,6 +8,9 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ---
 
+# -- PCB EN PRUEBAS, LOS GERBERS ESTARÁN CUANDO SE PRUEBE BIEN -- #
+
+
 ## 🔧 Componentes Modulares - Elige tu Configuración
 
 
