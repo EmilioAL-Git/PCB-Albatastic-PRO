@@ -2,11 +2,11 @@
 
 ## Índice 📑
 
-- 📝 [Changelog](#changelog)
-- 🔧 [Componentes Modulares](#componentes-modulares---elige-tu-configuracion)
-- 📦 [Listado de Materiales (BOM)](#listado-de-materiales-bom)
-- 🚀 [Configuraciones Típicas](#configuraciones-tipicas)
-- 🎯 [Ventajas y Notas](#ventajas-y-notas)
+- 📝 [Changelog](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-changelog)
+- 🔧 [Componentes Modulares](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-componentes-modulares---elige-tu-configuraci%C3%B3n)
+- 📦 [Listado de Materiales (BOM)](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-listado-de-materiales-bom)
+- 🚀 [Configuraciones Típicas](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-configuraciones-t%C3%ADpicas)
+- 🎯 [Ventajas y Notas](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-ventajas)
 
 ---
 
