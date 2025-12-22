@@ -59,7 +59,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 | **E22** | SX1262 + PA | 30dBm (1W) | Máximo alcance, repetidores |
 | **E22P** ⭐ | LLCC68/SX1262 | 30dBm (1W) | Similar al E22 pero con filtros incorporados |
 | **HT-RA62** | SX1262 | 22dBm | Sensibilidad -134dBm, compacto |
-| **RA-01** | SX1278 | 20dBm | Bajo coste, modelo antiguo |
+| **RA-01** | SX1278 | 20dBm | Bajo coste, modelo antiguo usado principalmente en 433 Mhz |
 | **E80**  | LR1121 | 22dBm/13dBm | **Banda dual** (Sub-GHz + 2.4GHz), LR-FHSS Muy novedoso |
 
 ---
@@ -105,6 +105,75 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 **Conectores**
 - Solar +/-
 - Interruptor ON/OFF
+
+---
+
+# 📦 Listado de Materiales (BOM)
+
+<details>
+<summary>Ver materiales</summary>
+  
+---
+
+Enlaces no afiliados
+
+### 🧠 MCU (elige una)
+- XIAO nRF52840  
+  [Aliexpress](https://es.aliexpress.com/item/1005008326858009.html)
+- ProMicro nRF52840  
+  [Aliexpress](https://es.aliexpress.com/item/1005006271881076.html)
+
+### ☀️ Cargador solar (elige uno)
+- CN3791  
+  [Aliexpress](https://es.aliexpress.com/item/4001079800497.html)
+- CN3065  
+  [Aliexpress](https://es.aliexpress.com/item/1005008860476794.html)
+- SD05CRMA  
+  [Aliexpress](https://es.aliexpress.com/item/1005010382091100.html)
+
+### 📡 Radio LoRa (elige uno)
+- E22 (SX1262 + PA)  
+  [Aliexpress](https://es.aliexpress.com/item/1005001808243661.html)
+- E22P  
+  [Aliexpress](https://es.aliexpress.com/item/1005009791259954.html)
+- HT-RA62  
+  [Aliexpress](https://es.aliexpress.com/item/1005008517475656.html)
+- RA-01 (SX1278)  
+  [Aliexpress](https://es.aliexpress.com/item/1005010556589507.html)
+- E80 (LR1121)  
+  [Aliexpress](https://es.aliexpress.com/item/1005007763874630.html)
+
+### 🌡️ Sensores (opcionales)
+- BME280  
+  [Aliexpress](https://es.aliexpress.com/item/1005008511564094.html)
+- INA219  
+  [Aliexpress](https://es.aliexpress.com/item/1005005835269275.html)
+- GPS NEO-6M / similar  
+  [Aliexpress](https://es.aliexpress.com/item/1005008476063712.html)
+
+### ⚡ Energía
+- BMS 2×18650  
+  [Aliexpress](https://es.aliexpress.com/item/1005009337321904.html)
+- Batería 18650 (Mi recomendación)  
+  [NKON](https://www.nkon.nl/es/samsung-inr18650-35e-3400mah-8a.html)
+- Boost DC-DC HW-085 (Opción 1) ⚠️ OJO! Configurar a 5V  
+  [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
+- Boost DC-DC (Opción 2)  
+  [Aliexpress](https://es.aliexpress.com/item/1005008051438437.html)
+
+### 🔌 Conectores y varios
+- Conector UART / Serial / Solar  
+  Pines sobrantes de los demás componentes
+- Interruptor ON/OFF  
+  [Aliexpress](https://es.aliexpress.com/item/1005005633418066.html)
+- Supervisor TLV840  
+  [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
+- Attiny13A (Reset automático)  
+  [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
+
+</details>
+
+
 
 ---
 
