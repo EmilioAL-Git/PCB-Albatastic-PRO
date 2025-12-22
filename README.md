@@ -2,11 +2,11 @@
 
 ## Índice 📑
 
-- [📝 Changelog](#changelog)
-- [🔧 Componentes Modulares](#componentes-modulares---elige-tu-configuracion)
-- [📦 Listado de Materiales (BOM)](#listado-de-materiales-bom)
-- [🚀 Configuraciones Típicas](#configuraciones-tipicas)
-- [🎯 Ventajas y Notas](#ventajas-y-notas)
+- 📝 [Changelog](#changelog)
+- 🔧 [Componentes Modulares](#componentes-modulares---elige-tu-configuracion)
+- 📦 [Listado de Materiales (BOM)](#listado-de-materiales-bom)
+- 🚀 [Configuraciones Típicas](#configuraciones-tipicas)
+- 🎯 [Ventajas y Notas](#ventajas-y-notas)
 
 ---
 
