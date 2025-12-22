@@ -1,12 +1,24 @@
 # Albatastic PRO - PCB Modular para Meshtastic
 
+## Índice 📑
+
+- [📝 Changelog](#changelog)
+- [🔧 Componentes Modulares](#componentes-modulares---elige-tu-configuración)
+- [📦 Listado de Materiales (BOM)](#📦-listado-de-materiales-bom)
+- [🚀 Configuraciones Típicas](#🚀-configuraciones-típicas)
+- [🎯 Ventajas y Notas](#ventajas-y-notas)
+
+---
+
+
 ## Descripción
 
-PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en una **caja Famatel 3072**. Filosofía "Choose your fighter": monta solo los componentes que necesites. Siendo posible elegir entre varios.
+PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en una **caja Famatel 3072**. Filosofía "Choose your fighter": monta solo los componentes que necesites, pudiendo elegir entre varias opciones.
 
 **Lema**: *"One PCB to rule them ALL"*
 
 ---
+
 
 # -- PCB EN PRUEBAS, LOS GERBERS ESTARÁN CUANDO SE PRUEBE BIEN -- #
 
@@ -19,30 +31,30 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 | **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido conector **serial** para conexión entre PCBs<br>- Mejoras generales |
 | **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO** |
 
+---
 
 ## 🔧 Componentes Modulares - Elige tu Configuración
-
 
 <div align="center">
   <img src="Albatastic PRO v1.png" width="45%" />
   <img src="Albatastic PRO v1-2.png" width="45%" />
 </div>
 
-
-
-### 1️⃣ **Microcontrolador Principal** (Elige UNO)
+### 1️⃣ Microcontrolador Principal (Elige UNO)
 
 **NRF52 XIAO** ⭐ Recomendado
 - Nordic nRF52840
-- **Más fiable que ProMicro**
+- Más fiable que ProMicro
+- Menos posibilidades de accesorios
 
 **ProMicro**
 - nRF52840
 - Más económico
+- Posibilidad de tener sensores y GPS al mismo tiempo
 
 ---
 
-### 2️⃣ **Cargador Solar** (Opcional - Elige UNO)
+### 2️⃣ Cargador Solar (Opcional - Elige UNO)
 
 | Modelo | Entrada | Corriente | Características |
 |--------|---------|-----------|-----------------|
@@ -52,7 +64,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ---
 
-### 3️⃣ **Radio LoRa** (Elige UNO)
+### 3️⃣ Radio LoRa (Elige UNO)
 
 | Modelo | Chip | Potencia TX | Características principales |
 |--------|------|-------------|----------------------------|
@@ -64,7 +76,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ---
 
-### 4️⃣ **Sensores** (Opcionales - múltiples)
+### 4️⃣ Sensores (Opcionales - múltiples)
 
 **GPS**
 - Módulo externo
@@ -80,14 +92,14 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ---
 
-### 5️⃣ **Control Auxiliar** (Opcionales)
+### 5️⃣ Control Auxiliar (Opcionales)
 
 **TLV480**
 - Control de brownouts
 
 **ATTINY13A**
 - Reinicio cada X horas
-  
+
 ---
 
 ## ⚡ Sistema de Energía
@@ -108,15 +120,11 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ---
 
-# 📦 Listado de Materiales (BOM)
+## 📦 Listado de Materiales (BOM)
 
 <details>
 <summary>Ver materiales</summary>
   
----
-
-Enlaces no afiliados
-
 ### 🧠 MCU (elige una)
 - XIAO nRF52840  
   [Aliexpress](https://es.aliexpress.com/item/1005008326858009.html)
@@ -156,7 +164,7 @@ Enlaces no afiliados
   [Aliexpress](https://es.aliexpress.com/item/1005009337321904.html)
 - Batería 18650 (Mi recomendación)  
   [NKON](https://www.nkon.nl/es/samsung-inr18650-35e-3400mah-8a.html)
-- Boost DC-DC HW-085 (Opción 1) ⚠️ OJO! Configurar a 5V  
+- Boost DC-DC HW-085 (Opción 1) ⚠️ Configurar a 5V  
   [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
 - Boost DC-DC (Opción 2)  
   [Aliexpress](https://es.aliexpress.com/item/1005008051438437.html)
@@ -172,8 +180,6 @@ Enlaces no afiliados
   [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
 
 </details>
-
-
 
 ---
 
@@ -201,7 +207,9 @@ Por ejemplo, una placa puede operar en **LongFast** y la otra en **MediumFast**,
 Este enlace no usa LoRa, por lo que es rápido, estable y no consume airtime.  
 Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
 
-*Configuración proximamente*
+*Sólo para ProMicro*
+
+*Configuración próximamente*
 
 ---
 
@@ -215,6 +223,8 @@ Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
 
 ---
 
+## Notas Importantes
+
 > ⚠️ **Importante**: El XIAO nRF52 comparte pines entre GPS (UART) e I2C. Debes elegir:
 > - **GPS**: Para mantener la hora y localización (desactiva I2C)
 > - **I2C**: Para sensores BME280/INA219 (desactiva GPS)
@@ -222,6 +232,8 @@ Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
 > No puedes usar ambos simultáneamente con XIAO nRF52.
 
 ---
+
+## Autor y Versión
 
 **Diseñado por**: [@Sremylio](https://telegram.me/sremylio) para MESHTASTIC ALBACETE  
 **Versión**: PRO V1  
