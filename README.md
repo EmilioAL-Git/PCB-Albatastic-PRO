@@ -10,6 +10,15 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 # -- PCB EN PRUEBAS, LOS GERBERS ESTARÁN CUANDO SE PRUEBE BIEN -- #
 
+---
+
+## 📝 Changelog
+
+| Versión | Estado  | Cambios principales |
+|--------|----------------|---------------------|
+| **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido conector **serial** para conexión entre PCBs<br>- Mejoras generales |
+| **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO** |
+
 
 ## 🔧 Componentes Modulares - Elige tu Configuración
 
@@ -112,6 +121,18 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 **Banda Dual**
 - NRF52 XIAO + E80 + SD05CRMA + GPS
+
+---
+
+### 🔌 Conector Serial (UART)
+
+El conector serial permite interconectar dos Albatastic PRO mediante UART (TX/RX/GND) para intercambiar datos localmente.  
+Se puede usar para que una PCB actúe como **puente** entre dos nodos Meshtastic con **presets o frecuencias distintas**.  
+Por ejemplo, una placa puede operar en **LongFast** y la otra en **MediumFast**, reenviando mensajes entre ambas por serial.  
+Este enlace no usa LoRa, por lo que es rápido, estable y no consume airtime.  
+Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
+
+*Configuración proximamente*
 
 ---
 
