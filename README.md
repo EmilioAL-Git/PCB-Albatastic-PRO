@@ -98,7 +98,8 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 - Control de brownouts
 
 **ATTINY13A**
-- Reinicio cada X horas
+- Reinicio cada X horas configurable
+- Mas info aquí: https://github.com/incre77/attiny-reset
 
 ---
 
@@ -164,7 +165,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   [Aliexpress](https://es.aliexpress.com/item/1005009337321904.html)
 - Batería 18650 (Mi recomendación)  
   [NKON](https://www.nkon.nl/es/samsung-inr18650-35e-3400mah-8a.html)
-- Boost DC-DC HW-085 (Opción 1) ⚠️ Configurar a 5V  
+- Boost DC-DC HW-085 (Opción 1) ⚠️ Configurar a 5V (Quitar resistencias A y B) 
   [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
 - Boost DC-DC (Opción 2)  
   [Aliexpress](https://es.aliexpress.com/item/1005008051438437.html)
@@ -192,10 +193,10 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 - Básica + SD05CRMA + Panel 5V
 
 **Completa**
-- Solar + GPS + BME280 + INA219 + ATTINY13A
+- Solar + GPS + BME280 + INA219 + ATTINY13A + TLV840
 
 **Banda Dual**
-- NRF52 XIAO + E80 + SD05CRMA + GPS
+- NRF52 XIAO + E80 
 
 ---
 
@@ -230,12 +231,28 @@ Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
 > - **I2C**: Para sensores BME280/INA219 (desactiva GPS)
 > 
 > No puedes usar ambos simultáneamente con XIAO nRF52.
+>
+> Para hacer funcionar tanto el GPS como los sensores I2C debes flashear el firmware modificado que hay en la carpeta del repositorio. (Habilitan el uso de los pines D6 y D7)
 
+---
+
+## ⚙️ Configuración en la APP
+
+> Pines GPS XIAO:
+> - GPS receive: Pin 6
+> - GPS Transmit: Pin 7
+> - GPS Enable: Pin 0
+>
+>  Pines GPS ProMicro:
+> - GPS receive: Pin 20
+> - GPS Transmit: Pin 22
+> - GPS Enable: Pin 24
+ 
 ---
 
 ## Autor y Versión
 
 **Diseñado por**: [@Sremylio](https://telegram.me/sremylio) para MESHTASTIC ALBACETE  
-**Versión**: PRO V1  
+**Versión**: PRO V1.1  
 
 **¡Choose your fighter y monta tu nodo ideal!** 🚀
