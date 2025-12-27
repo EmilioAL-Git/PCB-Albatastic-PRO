@@ -13,7 +13,7 @@
 
 ## Descripción
 
-PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en una **caja Famatel 3072**. Filosofía "Choose your fighter": monta solo los componentes que necesites, pudiendo elegir entre varias opciones.
+PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en una [**caja Famatel 3072**](https://www.leroymerlin.es/productos/caja-de-conexion-estanca-150x110x63-mm-sin-conos-82049191.html). Filosofía "Choose your fighter": monta solo los componentes que necesites, pudiendo elegir entre varias opciones.
 
 **Lema**: *"One PCB to rule them ALL"*
 
@@ -179,6 +179,9 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
 - Attiny13A (Reset automático)  
   [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
+
+### ☔ Caja estanca
+ - [**Famatel 3072**](https://www.leroymerlin.es/productos/caja-de-conexion-estanca-150x110x63-mm-sin-conos-82049191.html)
 
 </details>
 
