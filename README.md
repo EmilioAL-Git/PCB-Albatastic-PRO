@@ -61,6 +61,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 | **CN3791** | 4.5-12V | hasta 2A | MPPT, paneles grandes (>6.5V) |
 | **CN3065** | hasta 6.5V | hasta 500mA | Paneles pequeños (5-6V) |
 | **SD05CRMA** | 4.4-6.5V | 1A | Ultra compacto, MPPT, paneles 5V |
+| **SD30CRMA** | 9-18V | 1A | Salida ajustable para Liion y LiFepo4, MPPT, paneles hasta 18V |
 
 ---
 
@@ -82,7 +83,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 - Módulo externo
 - Pines: RX, TX, X, GND, VCC, y Mosfet de activación
 
-**BME280**
+**BME/BMP280/AHT20**
 - Temperatura, humedad, presión
 - Interfaz I2C
 
@@ -139,6 +140,8 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   [Aliexpress](https://es.aliexpress.com/item/1005008860476794.html)
 - SD05CRMA  
   [Aliexpress](https://es.aliexpress.com/item/1005010382091100.html)
+- SD30CRMA  
+  [Aliexpress](  https://es.aliexpress.com/item/1005006026796945.html)
 
 ### 📡 Radio LoRa (elige uno)
 - E22 (SX1262 + PA)  
@@ -155,6 +158,8 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 ### 🌡️ Sensores (opcionales)
 - BME280  
   [Aliexpress](https://es.aliexpress.com/item/1005008511564094.html)
+- AHT20 + BMP280  
+  [Aliexpress](https://es.aliexpress.com/item/1005010470729456.html)
 - INA219  
   [Aliexpress](https://es.aliexpress.com/item/1005005835269275.html)
 - GPS NEO-6M / similar  
