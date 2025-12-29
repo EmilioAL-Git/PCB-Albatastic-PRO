@@ -95,7 +95,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ### 5️⃣ Control Auxiliar (Opcionales)
 
-**TLV480**
+**TLV840**
 - Control de brownouts
 
 **ATTINY13A**
