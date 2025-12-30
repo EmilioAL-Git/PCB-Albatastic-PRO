@@ -28,17 +28,34 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 | Versión | Estado  | Cambios principales |
 |--------|----------------|---------------------|
-| **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido conector **serial** para conexión entre PCBs<br>- Mejoras generales |
+| **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido soporte **BME680** <br>- Añadido soporte **AHT20** <br>- Añadido **SD30CRMA** <br>- **Añadido fusible por cada celda** <br>- Añadido **conector serial** para conexión entre PCBs <br>- **Pantalla OLED opcional** <br>- Mejoras generales |
 | **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO** |
 
 ---
 
 ## 🔧 Componentes Modulares - Elige tu Configuración
 
+<details>
+<summary>🧩 Diseño físico — <strong>Versión V1.0</strong></summary>
+
+<br>
+
 <div align="center">
-  <img src="Albatastic PRO v1.png" width="45%" />
-  <img src="Albatastic PRO v1-2.png" width="45%" />
+  <img src="images/Albatastic PRO v1.png" width="45%" />
+  <img src="images/Albatastic PRO v1-2.png" width="45%" />
 </div>
+
+</details>
+
+---
+
+### 🧩 Diseño físico — **Versión V1.1**
+
+<div align="center">
+  <img src="images/AlbatasticPRO1.1.png" width="45%" />
+  <img src="images/AlbatasticPRO1.1_3d.png" width="45%" />
+</div>
+
 
 ### 1️⃣ Microcontrolador Principal (Elige UNO)
 
@@ -81,10 +98,10 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 **GPS**
 - Módulo externo
-- Pines: RX, TX, X, GND, VCC, y Mosfet de activación
+- Mosfet de activación
 
-**BME/BMP280/AHT20**
-- Temperatura, humedad, presión
+**BME280 / BME680 / BMP280 / AHT20**
+- Temperatura, humedad, presión, gas (BME680)
 - Interfaz I2C
 
 **INA219**
@@ -106,10 +123,11 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 ## ⚡ Sistema de Energía
 
-**BMS Dual 18650**
+**Bateria incorporada**
 - 2x baterías 18650 en paralelo
 - Protección por BMS
 - ~7000mAh capacidad total
+- Fusible por celda
 
 **Elevador DC-DC/Boost HW-085**
 - Dos modelos universales
@@ -160,16 +178,20 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   [Aliexpress](https://es.aliexpress.com/item/1005008511564094.html)
 - AHT20 + BMP280  
   [Aliexpress](https://es.aliexpress.com/item/1005010470729456.html)
+- BME680
+  [Aliexpress](https://es.aliexpress.com/item/1005009656538037.html)
 - INA219  
   [Aliexpress](https://es.aliexpress.com/item/1005005835269275.html)
 - GPS NEO-6M / similar  
   [Aliexpress](https://es.aliexpress.com/item/1005008476063712.html)
 
 ### ⚡ Energía
-- BMS 2×18650  
+- BMS 
   [Aliexpress](https://es.aliexpress.com/item/1005009337321904.html)
 - Batería 18650 (Mi recomendación)  
   [NKON](https://www.nkon.nl/es/samsung-inr18650-35e-3400mah-8a.html)
+- Fusibles (1 por cada celda, 1A–3A)
+  [Aliexpress](https://es.aliexpress.com/item/1005002366334753.html)
 - Boost DC-DC HW-085 (Opción 1) ⚠️ Configurar a 5V (Quitar resistencias A y B) 
   [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
 - Boost DC-DC (Opción 2)  
@@ -184,6 +206,8 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
 - Attiny13A (Reset automático)  
   [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
+
+  
 
 ### ☔ Caja estanca
  - [**Famatel 3072**](https://www.leroymerlin.es/productos/caja-de-conexion-estanca-150x110x63-mm-sin-conos-82049191.html)
@@ -219,6 +243,18 @@ Ideal para nodos gateway, repetidores híbridos o bridges multi-banda.
 *Sólo para ProMicro*
 
 *Configuración próximamente*
+
+---
+
+## 🖥️ Pantalla OLED (Opcional)
+
+Soporte para pantalla **OLED I2C 0.96" SSD1306** para visualización de estado:
+- Nodo activo
+- Señal LoRa
+- Voltaje de batería
+- Estado GPS / sensores
+
+La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 
 ---
 
