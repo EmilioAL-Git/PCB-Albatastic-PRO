@@ -28,7 +28,7 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
 
 | Versión | Estado  | Cambios principales |
 |--------|----------------|---------------------|
-| **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido soporte **BME680** <br>- Añadido soporte **AHT20** <br>- Añadido **SD30CRMA** <br>- **Añadido fusible por cada celda** <br>- Añadido **conector serial** para conexión entre PCBs <br>- **Pantalla OLED opcional** <br>- Mejoras generales |
+| **v1.1** | 🧪 En pruebas | - Corregidos varios fallos de diseño detectados <br>- Añadido soporte **BME680** <br>- Añadido soporte **AHT20** <br>- Añadido **soporte SD30CRMA** <br>- Añadido **fusible por cada celda** <br>- Añadido **conector serial** para conexión entre PCBs <br>- Añadido **pulsador físico de reset** <br>- Añadida **pantalla OLED opcional** <br>- Mejoras generales |
 | **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO** |
 
 ---
