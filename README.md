@@ -202,6 +202,8 @@ PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en
   Pines sobrantes de los demás componentes
 - Interruptor ON/OFF  
   [Aliexpress](https://es.aliexpress.com/item/1005005633418066.html)
+- Pulsador RESET  
+  [Aliexpress](https://es.aliexpress.com/item/4001125532910.html)
 - Supervisor TLV840  
   [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
 - Attiny13A (Reset automático)  
