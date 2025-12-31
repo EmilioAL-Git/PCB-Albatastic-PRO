@@ -7,6 +7,7 @@
 - 📦 [Listado de Materiales (BOM)](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-listado-de-materiales-bom)
 - 🚀 [Configuraciones Típicas](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-configuraciones-t%C3%ADpicas)
 - 🎯 [Ventajas y Notas](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-ventajas)
+- 📜 [Licencia](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-Licencia)
 
 ---
 
@@ -302,3 +303,24 @@ La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 **Versión**: PRO V1.1  
 
 **¡Choose your fighter y monta tu nodo ideal!** 🚀
+
+## 📜 Licencia
+
+Este proyecto se distribuye bajo la licencia:
+
+**Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)**
+
+Esto significa que puedes:
+- Usar el diseño
+- Modificarlo
+- Compartirlo
+
+Siempre que:
+- Reconozcas al autor original
+- **NO lo utilices con fines comerciales**
+
+Queda **expresamente prohibido** fabricar, vender o distribuir este diseño con fines comerciales sin autorización expresa del autor.
+
+Más información sobre la licencia:
+https://creativecommons.org/licenses/by-nc/4.0/
+
