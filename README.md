@@ -1,6 +1,6 @@
 # Albatastic PRO - PCB Modular para Meshtastic
 
-> 🌍 **[English version below](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-english-version)** | **Versión en inglés más abajo**
+ # 🌍🇬🇧 [English version below](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-english-version)
 
 > ⚖️ **Licencia: CC BY-NC 4.0 — Uso no comercial únicamente**  
 > Este diseño es de libre uso y modificación, **pero queda prohibido cualquier uso comercial** sin autorización expresa del autor.
