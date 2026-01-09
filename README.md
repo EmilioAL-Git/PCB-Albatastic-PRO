@@ -1,5 +1,8 @@
 # Albatastic PRO - PCB Modular para Meshtastic
 
+> ⚖️ **Licencia: CC BY-NC 4.0 — Uso no comercial únicamente**  
+> Este diseño es de libre uso y modificación, **pero queda prohibido cualquier uso comercial** sin autorización expresa del autor.
+
 ## Índice 📑
 
 - 📝 [Changelog](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-changelog)
@@ -17,6 +20,31 @@
 PCB modular diseñada para proyectos Meshtastic, dimensionada para integrarse en una [**caja Famatel 3072**](https://www.leroymerlin.es/productos/caja-de-conexion-estanca-150x110x63-mm-sin-conos-82049191.html). Filosofía "Choose your fighter": monta solo los componentes que necesites, pudiendo elegir entre varias opciones.
 
 **Lema**: *"One PCB to rule them ALL"*
+
+---
+
+## 🏭 Proyecto patrocinado por PCBWay
+
+<div align="center">
+  <img src="https://pcbwayfile.s3-us-west-2.amazonaws.com/project/21/05/05/0141152434522.jpg" width="300"/>
+</div>
+
+Este proyecto ha sido fabricado y probado gracias al patrocinio de **PCBWay**, empresa líder en fabricación de PCBs y ensamblado electrónico.
+
+Las placas recibidas presentan una **calidad de fabricación excelente**, con:
+- Serigrafía nítida y precisa  
+- Máscaras de soldadura perfectamente definidas  
+- Vías y pistas limpias y bien alineadas  
+- Acabados profesionales de nivel industrial
+
+Gracias a esta calidad de fabricación, el proceso de montaje y prueba del hardware ha sido notablemente más fiable y sencillo, permitiendo validar el diseño de forma eficiente y con resultados muy satisfactorios.
+
+Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abiertos y comunitarios como **Albatastic PRO**.
+
+<div align="center">
+  <img src="images/pcbway.JPG" width="85%"/>
+</div>
+
 
 ---
 
