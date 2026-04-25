@@ -59,9 +59,11 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 
 | Versión | Estado | Cambios principales |
 |---------|--------|---------------------|
-| **v1.2** | 🚧 En pruebas | - **Sistema de reinicio** mediante mosfet<br>- Nuevo boost<br>- Footprint actualizado para **XIAO nRF52840**<br>- Pistas del E22 aumentadas de tamaño para soportar 1W<br>- Condensadores de **tántalo en entrada E22** para estabilidad<br>- Condensadores cerámicos en **todas las líneas de corriente**<br>- Redistribución de componentes para **reducir ruido RF**<br>- **Planos de tierra mejorados** <br>- **Doble BMS en capa inferior** para mejor térmicas<br>- Componentes movidos a **cara posterior**<br>- Mejora general de layout y EMI |
+| **v1.2** | 🚧 En pruebas | - **Sistema watchdog** mediante relé<br>- Nuevo boost<br>- Footprint actualizado para **XIAO nRF52840**<br>- Pistas del E22 aumentadas de tamaño para soportar 1W<br>- **Condensadores de tántalo en entrada E22** para estabilidad<br>- Redistribución de componentes para **reducir ruido RF**<br>- **Planos de tierra mejorados**<br>- **BMS movida a la parte inferior**<br>- Componentes movidos a **cara posterior**<br>- Mejora general de layout y EMI |
 | **v1.1** | ✅ Probada | - Corregidos fallos de diseño de v1.0<br>- **Resuelto problema de reinicios con TLV840**<br>- Añadido soporte **BME680** (sensor gas)<br>- Añadido soporte **AHT20** (temp/humedad)<br>- Añadido soporte **SD30CRMA** (carga solar)<br>- **Fusible por cada celda** 18650<br>- **Conector serial** para conexión entre PCBs<br>- **Pulsador físico de reset**<br>- **Pantalla OLED opcional**<br>- Mejoras generales de routing |
 | **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO**<br>- Diseño modular "Choose your fighter"<br>- Compatible con caja Famatel 3072<br>- Soporte múltiples MCU, radios y sensores |
+
+> ⚡ **v1.2** — Versión más reciente, actualmente en pruebas.
 
 ---
 
@@ -433,10 +435,11 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 
 ## 📝 Changelog
 
-| Version | Status  | Main Changes |
-|--------|----------------|---------------------|
-| **v1.1** | 🧪 Testing | - Fixed several detected design flaws <br>- Added **BME680** support <br>- Added **AHT20** support <br>- Added **SD30CRMA support** <br>- Added **fuse per cell** <br>- Added **serial connector** for inter-PCB connection <br>- Added **physical reset button** <br>- Added **optional OLED display** <br>- General improvements |
-| **v1.0** | ✅ Tested | - Initial version of **Albatastic PRO** |
+| Version | Status | Main changes |
+|---------|--------|---------------------|
+| **v1.2** | 🚧 In testing | - **Watchdog system** via relay<br>- New boost<br>- Updated footprint for **XIAO nRF52840**<br>- E22 traces widened to support 1W<br>- **Tantalum capacitors on E22 input** for stability<br>- Component redistribution to **reduce RF noise**<br>- **Improved ground planes**<br>- **BMS moved to bottom side**<br>- Components moved to **back side**<br>- General layout and EMI improvements |
+| **v1.1** | ✅ Tested | - Fixed design flaws from v1.0<br>- **Resolved reboot issue with TLV840**<br>- Added **BME680** support (gas sensor)<br>- Added **AHT20** support (temp/humidity)<br>- Added **SD30CRMA** support (solar charging)<br>- **Fuse per 18650 cell**<br>- **Serial connector** for PCB-to-PCB connection<br>- **Physical reset button**<br>- **Optional OLED display**<br>- General routing improvements |
+| **v1.0** | ✅ Tested | - Initial **Albatastic PRO** release<br>- Modular "Choose your fighter" design<br>- Compatible with Famatel 3072 enclosure<br>- Support for multiple MCUs, radios and sensors |
 
 ---
 
