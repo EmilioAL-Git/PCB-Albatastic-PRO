@@ -1,3 +1,10 @@
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue)
+![Status](https://img.shields.io/badge/status-en%20desarrollo-yellow)
+![PCB](https://img.shields.io/badge/PCB-2%20capas-green)
+![Version](https://img.shields.io/badge/versión-v1.2-orange)
+![Meshtastic](https://img.shields.io/badge/Meshtastic-compatible-8a2be2)
+![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-blue)
+
 # Albatastic PRO - PCB Modular para Meshtastic
 
  # 🌍🇬🇧 [English version below](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-english-version)
@@ -330,7 +337,7 @@ A partir de la **v1.2**, la PCB incorpora un sistema watchdog inteligente basado
 
 El sistema actúa en dos niveles: primero intenta un **reset suave** (pulso en pin RST) y si el nodo no se recupera, ejecuta un **reset duro** cortando la corriente mediante un relé. El timeout preventivo es configurable mediante jumpers en la propia PCB.
 
-Más información y código fuente: [Albatastic-Watchdog](https://github.com/EmilioAL-Git/Albatastic-Watchdog)
+Más información, componentes y código fuente: [Albatastic-Watchdog](https://github.com/EmilioAL-Git/Albatastic-Watchdog)
 
 ---
 
@@ -407,6 +414,13 @@ https://creativecommons.org/licenses/by-nc/4.0/
 ---
 
 # 🇬🇧 ENGLISH VERSION
+
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue)
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![PCB](https://img.shields.io/badge/PCB-2%20layer-green)
+![Version](https://img.shields.io/badge/version-v1.2-orange)
+![Meshtastic](https://img.shields.io/badge/Meshtastic-compatible-8a2be2)
+![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-blue)
 
 # Albatastic PRO - Modular PCB for Meshtastic
 
