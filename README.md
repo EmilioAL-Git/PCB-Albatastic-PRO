@@ -1,3 +1,10 @@
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue)
+![Status](https://img.shields.io/badge/status-en%20desarrollo-yellow)
+![PCB](https://img.shields.io/badge/PCB-2%20capas-green)
+![Version](https://img.shields.io/badge/versión-v1.2-orange)
+![Meshtastic](https://img.shields.io/badge/Meshtastic-compatible-8a2be2)
+![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-blue)
+
 # Albatastic PRO - PCB Modular para Meshtastic
 
  # 🌍🇬🇧 [English version below](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-english-version)
@@ -15,7 +22,6 @@
 - 📜 [Licencia](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO?tab=readme-ov-file#-Licencia)
 
 ---
-
 
 ## Descripción
 
@@ -47,9 +53,7 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
   <img src="images/pcbway.JPG" width="85%"/>
 </div>
 
-
 ---
-
 
 > 📂 **Los Gerbers de la v1.2 están disponibles en el repositorio.**  
 > ⚠️ Actualmente estoy trabajando en una versión compacta **10×10 cm** para mantener el coste de fabricación bajo en JLCPCB. Próximamente.
@@ -60,6 +64,7 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 
 | Versión | Estado | Cambios principales |
 |---------|--------|---------------------|
+| **v1.2 Mini** | 🚧 En desarrollo | - Versión compacta **10×10 cm** para reducir costes de fabricación en JLCPCB<br>- Basada en v1.2, mismas funcionalidades en formato reducido |
 | **v1.2** | ✅ Probada | - **Sistema watchdog** mediante relé<br>- Nuevo boost<br>- Footprint actualizado para **XIAO nRF52840**<br>- Pistas del E22 aumentadas de tamaño para soportar 1W<br>- **Condensadores de tántalo en entrada E22** para estabilidad<br>- Redistribución de componentes para **reducir ruido RF**<br>- **Planos de tierra mejorados**<br>- **BMS movida a la parte inferior**<br>- Componentes movidos a **cara posterior**<br>- Mejora general de layout y EMI |
 | **v1.1** | ✅ Probada | - Corregidos fallos de diseño de v1.0<br>- **Resuelto problema de reinicios con TLV840**<br>- Añadido soporte **BME680** (sensor gas)<br>- Añadido soporte **AHT20** (temp/humedad)<br>- Añadido soporte **SD30CRMA** (carga solar)<br>- **Fusible por cada celda** 18650<br>- **Conector serial** para conexión entre PCBs<br>- **Pulsador físico de reset**<br>- **Pantalla OLED opcional**<br>- Mejoras generales de routing |
 | **v1.0** | ✅ Probada | - Versión inicial de **Albatastic PRO**<br>- Diseño modular "Choose your fighter"<br>- Compatible con caja Famatel 3072<br>- Soporte múltiples MCU, radios y sensores |
@@ -84,13 +89,40 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 
 ---
 
-### 🧩 Diseño físico — **Versión V1.1**
+<details>
+<summary>🧩 Diseño físico — <strong>Versión V1.1</strong></summary>
+
+<br>
 
 <div align="center">
   <img src="images/AlbatasticPRO1.1.png" width="45%" />
   <img src="images/AlbatasticPRO1.1_3d.png" width="45%" />
 </div>
 
+</details>
+
+---
+
+### 🧩 Diseño físico — **Versión V1.2**
+
+<div align="center">
+  <img src="images/Albatastic PRO 1.2.png" width="45%" />
+  <img src="images/Albatastic PRO 1.2 3D.png" width="45%" />
+  <img src="images/Albatastic 1.2 Montada.jpeg" width="60%" />
+</div>
+
+---
+
+### 🧩 Diseño físico — **Versión V1.2 Mini** *(En desarrollo)*
+
+PCB compacta de **10×10 cm** basada en la v1.2, diseñada para reducir el coste de fabricación en servicios como JLCPCB. Mantiene las mismas funcionalidades principales en un formato más pequeño.
+
+<div align="center">
+  <img src="images/Albatastic PRO 1.2 Mini.png" width="45%" />
+  <img src="images/Albatastic PRO 1.2 Mini 3D.png" width="45%" />
+</div>
+
+---
 
 ### 1️⃣ Microcontrolador Principal (Elige UNO)
 
@@ -122,7 +154,7 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 | Modelo | Chip | Potencia TX | Características principales |
 |--------|------|-------------|----------------------------|
 | **E22** | SX1262 + PA | 30dBm (1W) | Máximo alcance, repetidores |
-| **E22P** ⭐ | LLCC68/SX1262 | 30dBm (1W) | Similar al E22 pero con filtros incorporados |
+| **E22P** ⭐ | SX1262 + PA | 30dBm (1W) | Similar al E22 pero con filtros incorporados |
 | **HT-RA62** | SX1262 | 22dBm | Sensibilidad -134dBm, compacto |
 | **RA-01** | SX1278 | 20dBm | Bajo coste, modelo antiguo usado principalmente en 433 Mhz |
 | **E80**  | LR1121 | 22dBm/13dBm | **Banda dual** (Sub-GHz + 2.4GHz), LR-FHSS Muy novedoso |
@@ -147,12 +179,12 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 
 ### 5️⃣ Control Auxiliar (Opcionales)
 
-**TLV840**
-- Control de brownouts
-
-**ATTINY13A**
-- Reinicio cada X horas configurable
-- Mas info aquí: https://github.com/incre77/attiny-reset
+**ATTINY13A — Watchdog Inteligente** *(v1.2+)*
+- Monitoriza la actividad del módulo de radio y ejecuta un reset automático si detecta que el nodo se ha colgado
+- Reset suave (RST) y reset duro (corte de corriente vía relé) en dos niveles
+- Timeout preventivo configurable por jumpers
+- Se puede puentear mediante bypass soldado si no se desea usar el sistema watchdog
+- Más info: https://github.com/EmilioAL-Git/Albatastic-Watchdog
 
 ---
 
@@ -164,10 +196,9 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 - ~7000mAh capacidad total
 - Fusible por celda
 
-**Elevador DC-DC/Boost HW-085**
-- Dos modelos universales
-- Elevador DC-DC
-- Salida 5V estable para E22/E22P
+**Elevador DC-DC/Boost**
+- HW-085 (Opción 1 y 2): modelos universales, salida 5V estable
+- XL63020/TPS63020 (Opción 3): recomendado para E22/E22P
 
 **Conectores**
 - Solar +/-
@@ -194,7 +225,7 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 - SD05CRMA  
   [Aliexpress](https://es.aliexpress.com/item/1005010382091100.html)
 - SD30CRMA  
-  [Aliexpress](  https://es.aliexpress.com/item/1005006026796945.html)
+  [Aliexpress](https://es.aliexpress.com/item/1005006026796945.html)
 
 ### 📡 Radio LoRa (elige uno)
 - E22 (SX1262 + PA)  
@@ -231,20 +262,24 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
   [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
 - Boost DC-DC (Opción 2)  
   [Aliexpress](https://es.aliexpress.com/item/1005008051438437.html)
+- Boost XL63020/TPS63020 (Opción 3) ⭐ Ideal para E22/E22P  
+  [Aliexpress](https://es.aliexpress.com/item/1005007639555086.html)
+- Condensador tántalo B 10V 100µF *(solo E22/E22P)*  
+  [Aliexpress](https://es.aliexpress.com/item/1005002548657852.html)
+- Condensador baja ESR 1000µF 16V *(solo E22/E22P)*  
+  [Aliexpress](https://es.aliexpress.com/item/33030332216.html)
+- Condensador 100nF (lectura de voltaje)  
+  [Aliexpress](https://es.aliexpress.com/item/1005007780136646.html)
 
 ### 🔌 Conectores y varios
 - Conector UART / Serial / Solar  
   Pines sobrantes de los demás componentes
 - Interruptor ON/OFF  
   [Aliexpress](https://es.aliexpress.com/item/1005005633418066.html)
-- Pulsador RESET  
+- Pulsador RESET / Usuario  
   [Aliexpress](https://es.aliexpress.com/item/4001125532910.html)
-- Supervisor TLV840  
-  [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
-- Attiny13A (Reset automático)  
+- Attiny13A (Watchdog inteligente)  
   [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
-
-  
 
 ### ☔ Caja estanca
  - [**Famatel 3072**](https://www.leroymerlin.es/productos/caja-de-conexion-estanca-150x110x63-mm-sin-conos-82049191.html)
@@ -262,7 +297,7 @@ Agradecimiento especial a **PCBWay** por apoyar el desarrollo de proyectos abier
 - Básica + SD05CRMA + Panel 5V
 
 **Completa**
-- Solar + GPS + BME280 + INA219 + ATTINY13A + TLV840
+- Solar + GPS + BME280 + INA219 + ATTINY13A
 
 **Banda Dual**
 - NRF52 XIAO + E80 
@@ -304,6 +339,15 @@ La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 <img src="images/albatasticPRO_1.1-oled-2.png" width="30%" />
 </div>
 
+---
+
+## 🐕 Watchdog Inteligente
+
+A partir de la **v1.2**, la PCB incorpora un sistema watchdog inteligente basado en **ATtiny13A** que monitoriza la actividad del módulo de radio y ejecuta un reset automático si detecta que el nodo se ha colgado.
+
+El sistema actúa en dos niveles: primero intenta un **reset suave** (pulso en pin RST) y si el nodo no se recupera, ejecuta un **reset duro** cortando la corriente mediante un relé. El timeout preventivo es configurable mediante jumpers en la propia PCB.
+
+Más información, componentes y código fuente: [Albatastic-Watchdog](https://github.com/EmilioAL-Git/Albatastic-Watchdog)
 
 ---
 
@@ -313,7 +357,6 @@ La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 ✅ Económico: no pagas componentes sin usar  
 ✅ Escalable: añade sensores después  
 ✅ Integración perfecta en Famatel 3072  
-✅ Producción: SMD una sola cara  
 
 ---
 
@@ -331,7 +374,6 @@ La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 <div align="center">
 <img src="images/xiao_reset.jpg" width="30%" />
 </div>
-
 
 ---
 
@@ -352,7 +394,7 @@ La pantalla puede instalarse o retirarse sin afectar al funcionamiento del nodo.
 ## Autor y Versión
 
 **Diseñado por**: [@Sremylio](https://telegram.me/sremylio) para MESHTASTIC ALBACETE  
-**Versión**: PRO V1.1  
+**Versión**: PRO V1.2  
 
 **¡Choose your fighter y monta tu nodo ideal!** 🚀
 
@@ -376,11 +418,17 @@ Queda **expresamente prohibido** fabricar, vender o distribuir este diseño con 
 Más información sobre la licencia:
 https://creativecommons.org/licenses/by-nc/4.0/
 
-
 ---
 ---
 
 # 🇬🇧 ENGLISH VERSION
+
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue)
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![PCB](https://img.shields.io/badge/PCB-2%20layer-green)
+![Version](https://img.shields.io/badge/version-v1.2-orange)
+![Meshtastic](https://img.shields.io/badge/Meshtastic-compatible-8a2be2)
+![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-blue)
 
 # Albatastic PRO - Modular PCB for Meshtastic
 
@@ -439,6 +487,7 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 
 | Version | Status | Main changes |
 |---------|--------|---------------------|
+| **v1.2 Mini** | 🚧 In development | - Compact **10×10 cm** version to reduce manufacturing costs on JLCPCB<br>- Based on v1.2, same features in a smaller form factor |
 | **v1.2** | ✅ Tested | - **Watchdog system** via relay<br>- New boost<br>- Updated footprint for **XIAO nRF52840**<br>- E22 traces widened to support 1W<br>- **Tantalum capacitors on E22 input** for stability<br>- Component redistribution to **reduce RF noise**<br>- **Improved ground planes**<br>- **BMS moved to bottom side**<br>- Components moved to **back side**<br>- General layout and EMI improvements |
 | **v1.1** | ✅ Tested | - Fixed design flaws from v1.0<br>- **Resolved reboot issue with TLV840**<br>- Added **BME680** support (gas sensor)<br>- Added **AHT20** support (temp/humidity)<br>- Added **SD30CRMA** support (solar charging)<br>- **Fuse per 18650 cell**<br>- **Serial connector** for PCB-to-PCB connection<br>- **Physical reset button**<br>- **Optional OLED display**<br>- General routing improvements |
 | **v1.0** | ✅ Tested | - Initial **Albatastic PRO** release<br>- Modular "Choose your fighter" design<br>- Compatible with Famatel 3072 enclosure<br>- Support for multiple MCUs, radios and sensors |
@@ -461,12 +510,40 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 
 ---
 
-### 🧩 Physical Design — **Version V1.1**
+<details>
+<summary>🧩 Physical Design — <strong>Version V1.1</strong></summary>
+
+<br>
 
 <div align="center">
   <img src="images/AlbatasticPRO1.1.png" width="45%" />
   <img src="images/AlbatasticPRO1.1_3d.png" width="45%" />
 </div>
+
+</details>
+
+---
+
+### 🧩 Physical Design — **Version V1.2**
+
+<div align="center">
+  <img src="images/Albatastic PRO 1.2.png" width="45%" />
+  <img src="images/Albatastic PRO 1.2 3D.png" width="45%" />
+  <img src="images/Albatastic 1.2 Montada.jpeg" width="60%" />
+</div>
+
+---
+
+### 🧩 Physical Design — **Version V1.2 Mini** *(In development)*
+
+Compact **10×10 cm** PCB based on the v1.2, designed to reduce manufacturing costs on services like JLCPCB. Maintains the same main features in a smaller form factor.
+
+<div align="center">
+  <img src="images/Albatastic PRO 1.2 Mini.png" width="45%" />
+  <img src="images/Albatastic PRO 1.2 Mini 3D.png" width="45%" />
+</div>
+
+---
 
 ### 1️⃣ Main Microcontroller (Choose ONE)
 
@@ -498,7 +575,7 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 | Model | Chip | TX Power | Main Features |
 |--------|------|-------------|----------------------------|
 | **E22** | SX1262 + PA | 30dBm (1W) | Maximum range, repeaters |
-| **E22P** ⭐ | LLCC68/SX1262 | 30dBm (1W) | Similar to E22 but with built-in filters |
+| **E22P** ⭐ | SX1262 + PA | 30dBm (1W) | Similar to E22 but with built-in filters |
 | **HT-RA62** | SX1262 | 22dBm | -134dBm sensitivity, compact |
 | **RA-01** | SX1278 | 20dBm | Low cost, old model mainly used on 433 MHz |
 | **E80**  | LR1121 | 22dBm/13dBm | **Dual band** (Sub-GHz + 2.4GHz), LR-FHSS Very novel |
@@ -523,12 +600,12 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 
 ### 5️⃣ Auxiliary Control (Optional)
 
-**TLV840**
-- Brownout control
-
-**ATTINY13A**
-- Configurable restart every X hours
-- More info here: https://github.com/incre77/attiny-reset
+**ATTINY13A — Smart Watchdog** *(v1.2+)*
+- Monitors radio module activity and triggers an automatic reset if the node is detected as frozen
+- Two-level reset: soft reset (RST pulse) and hard reset (power cut via relay)
+- Preventive timeout configurable via jumpers
+- Can be bypassed with a solder bridge if the watchdog system is not needed
+- More info: https://github.com/EmilioAL-Git/Albatastic-Watchdog
 
 ---
 
@@ -540,10 +617,9 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 - ~7000mAh total capacity
 - Fuse per cell
 
-**DC-DC Boost Converter HW-085**
-- Two universal models
-- DC-DC booster
-- Stable 5V output for E22/E22P
+**DC-DC Boost Converter**
+- HW-085 (Option 1 & 2): universal models, stable 5V output
+- XL63020/TPS63020 (Option 3): recommended for E22/E22P
 
 **Connectors**
 - Solar +/-
@@ -607,17 +683,23 @@ Special thanks to **PCBWay** for supporting the development of open and communit
   [Aliexpress](https://es.aliexpress.com/item/1005006818054730.html)
 - DC-DC Boost (Option 2)  
   [Aliexpress](https://es.aliexpress.com/item/1005008051438437.html)
+- Boost XL63020/TPS63020 (Option 3) ⭐ Ideal for E22/E22P  
+  [Aliexpress](https://es.aliexpress.com/item/1005007639555086.html)
+- Tantalum capacitor B 10V 100µF *(E22/E22P only)*  
+  [Aliexpress](https://es.aliexpress.com/item/1005002548657852.html)
+- Low ESR capacitor 1000µF 16V *(E22/E22P only)*  
+  [Aliexpress](https://es.aliexpress.com/item/33030332216.html)
+- Capacitor 100nF (voltage reading)  
+  [Aliexpress](https://es.aliexpress.com/item/1005007780136646.html)
 
 ### 🔌 Connectors and misc
 - UART / Serial / Solar connector  
   Spare pins from other components
 - ON/OFF switch  
   [Aliexpress](https://es.aliexpress.com/item/1005005633418066.html)
-- RESET button  
+- RESET / User button  
   [Aliexpress](https://es.aliexpress.com/item/4001125532910.html)
-- TLV840 Supervisor  
-  [Aliexpress](https://es.aliexpress.com/item/1005009355692739.html)
-- Attiny13A (Automatic reset)  
+- Attiny13A (Smart watchdog)  
   [Aliexpress](https://es.aliexpress.com/item/1005010090899908.html)
 
 ### ☔ Waterproof box
@@ -636,7 +718,7 @@ Special thanks to **PCBWay** for supporting the development of open and communit
 - Basic + SD05CRMA + 5V Panel
 
 **Complete**
-- Solar + GPS + BME280 + INA219 + ATTINY13A + TLV840
+- Solar + GPS + BME280 + INA219 + ATTINY13A
 
 **Dual Band**
 - NRF52 XIAO + E80 
@@ -680,13 +762,22 @@ The display can be installed or removed without affecting node operation.
 
 ---
 
+## 🐕 Smart Watchdog
+
+Starting from **v1.2**, the PCB includes a smart watchdog system based on the **ATtiny13A** that monitors radio module activity and triggers an automatic reset if the node is detected as frozen.
+
+The system acts in two levels: first it attempts a **soft reset** (RST pin pulse) and if the node does not recover, it executes a **hard reset** by cutting power through a relay. The preventive timeout is configurable via jumpers on the PCB itself.
+
+More information and source code: [Albatastic-Watchdog](https://github.com/EmilioAL-Git/Albatastic-Watchdog)
+
+---
+
 ## 🎯 Advantages
 
 ✅ Modular: mount only what you need  
 ✅ Economical: don't pay for unused components  
 ✅ Scalable: add sensors later  
 ✅ Perfect integration in Famatel 3072  
-✅ Production: SMD single side  
 
 ---
 
@@ -724,7 +815,7 @@ The display can be installed or removed without affecting node operation.
 ## Author and Version
 
 **Designed by**: [@Sremylio](https://telegram.me/sremylio) for MESHTASTIC ALBACETE  
-**Version**: PRO V1.1  
+**Version**: PRO V1.2  
 
 **Choose your fighter and build your ideal node!** 🚀
 
